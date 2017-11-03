@@ -1,0 +1,14 @@
+.imagenFondo {
+	background-image: url("../images/EstadoLogo.jpg");
+	background-repeat: no-repeat;
+}
+
+.imagenMobile {
+	background-image: url("../images/LoginMobile.jpg");
+	background-repeat: no-repeat;
+}
+
+.imagenNro {
+	background-image: url("../images/LoginMobileNro.jpg");
+	background-repeat: no-repeat;
+}

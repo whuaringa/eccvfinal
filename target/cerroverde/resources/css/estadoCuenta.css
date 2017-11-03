@@ -1,0 +1,42 @@
+body, html {
+	overflow-x: hidden;
+}
+
+.bodyfont {
+	background-image: url("../images/webfon.jpg");
+	background-repeat: no-repeat;
+}
+
+.bodyfont1 {
+	background-image: url("../images/cel_EC.jpg");
+	background-repeat: no-repeat;
+}
+
+.ir-arriba {
+	display: none;
+	padding: 20px;
+	background: #024959;
+	font-size: 20px;
+	color: #fff;
+	cursor: pointer;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+}
+
+.sombra {
+	width: 50%;
+	color: gray;
+	size: 13px;
+	box-shadow: 14px 9px 15px #E5E7E9;
+}
+
+#principal1 {
+	margin-left: 250px;
+	width: 440px;
+	height: 190px;
+	margin-right: 250px;
+	border: 1px solid #E5E7E9;
+	background-color: white;
+	margin-top: 33px;
+}

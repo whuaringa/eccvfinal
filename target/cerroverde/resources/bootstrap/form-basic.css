@@ -1,0 +1,435 @@
+.form-ec {
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto 0;
+	font: 14px sans-serif;
+	text-align: center;
+}
+
+.form-log-in-with-ec {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 245px;
+	text-align: center;
+	box-shadow: 5px 4px 15px #999; height : 140px;
+	height: 140px;
+	width: 480px;
+	background-color: #ffffff;
+	margin-top: 220px;
+	height: 210px;
+}
+
+.form-log-in-with-ec .form-row {
+	text-align: left;
+}
+
+.form-log-in-with-ec .form-row>label span {
+	display: inline-block;
+	box-sizing: border-box;
+	color: #A4A4A4;
+	width: 190px;
+	text-align: left;
+	padding-right: 3px;
+	font-family: Calibri Light;
+	font-size: 110%;
+	margin-left: 25px;
+	margin-right: 15px;
+}
+
+.form-log-in-with-ec input {
+	color: #5f5f5f;
+	box-sizing: border-box;
+	width: 197px;
+	box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+	padding: 8px 8px;
+	border: 1px solid #dbdbdb;
+}
+
+.form-basic .form-row>div label span {
+	font-family: Arial, serif;
+	font-style: normal;
+	white: 150px; margin-top : 6px;
+	margin-left: 12px;
+	color: #A4A4A4;
+	font-size: 90%;
+	margin-top: 6px;
+}
+
+.form-log-in-with-ec .form-basicEC {
+	color: black;
+	max-width: 240px;
+	height: 35px; border-radius : 6px 6px 6px 6px;
+	padding: 1px 8px;
+	border: 1px solid #dbdbdb;
+	border-radius: 6px 6px 6px 6px;
+}
+
+.form-log-in-with-ec .form-row .btnboton {
+	margin-top: 17px;
+	width: 195px;
+	margin-left: 26px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+}
+
+
+.bodyfont1{
+	
+	visibility: hidden;
+}
+
+.form-ec{
+	
+	
+visibility: visible;	
+}
+
+.pieEC{
+	visibility: visible;
+}
+
+
+
+	
+	/* ********************************************* */
+	/* ********************************************* */
+	/* ********************************************* */
+	
+		
+	
+	@media only screen and (max-width: 780px) {
+	
+	.bodyfont {
+		visibility: hidden;
+		
+		
+	}
+	.bodyfont1 {
+		visibility: visible;
+		margin-left: 15px;
+		
+	}
+.form-log-in-with-ec {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	margin-left:-400px;
+	text-align: center;
+	box-shadow: 5px 4px 15px #999; height : 140px;
+	height: 140px;
+	width: 480px;
+	background-color: #ffffff;
+	margin-top: 150px;
+	height: 210px;
+}
+	.form-log-in-with-ec .form-row .btnboton {
+		margin-top: 17px;
+		width: 195px;
+		margin-left: -180px;
+	}
+	.form-log-in-with-ec input {
+		color: #5f5f5f;
+		box-sizing: border-box;
+		width: 197px;
+		box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+		padding: 8px 8px;
+		border: 1px solid #dbdbdb;
+		margin-left: 23px;
+		
+	}
+	
+	.form-log-in-with-ec .form-basicEC {
+	color: black;
+	max-width: 240px;
+	height: 35px; border-radius : 6px 6px 6px 6px;
+	padding: 1px 8px;
+	border: 1px solid #dbdbdb;
+	border-radius: 6px 6px 6px 6px;
+	margin-left: 23px;
+  }
+
+   .form-basic-new{
+	margin-left: -25px;
+   }
+   
+   .pieEC{
+	visibility: hidden;
+}
+
+.form-basic-new{
+	margin-left: 40px;
+	
+	
+}
+
+.form-log-in-with-ec .form-row .btnboton {
+	
+	margin-left: 50px;
+}
+
+.bienvenido{
+	margin-top: 6px;
+}
+.salir{
+	
+	margin-left: 500px;
+	margin-top: -10px;
+}
+   
+	}
+	
+	
+	/* ****************************** */
+	/* ****************************** */
+	/* ****************************** */
+	
+	
+	@media ( max-width : 600px) {
+	
+	.bodyfont {
+		visibility: hidden;
+	}
+	.bodyfont1 {
+		visibility: visible;
+		margin-left: 15px;
+	}
+	.form-log-in-with-ec {
+		margin-left: -690px;	
+		margin-top: 150px;
+		height: 330px;
+		width: 250px;	
+	}
+	
+	.form-log-in-with-ec .form-row .btnboton {
+		margin-top: 17px;
+		width: 195px;
+		margin-left: -180px;
+	}
+	.form-log-in-with-ec input {
+		color: #5f5f5f;
+		box-sizing: border-box;
+		width: 197px;
+		box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+		padding: 8px 8px;
+		border: 1px solid #dbdbdb;
+		margin-left: 23px;
+		margin-top: -6px;
+		margin-bottom: 10px;		
+		
+	}
+	
+	.form-log-in-with-ec .form-basicEC {
+	color: black;
+	max-width: 240px;
+	height: 35px; border-radius : 6px 6px 6px 6px;
+	padding: 1px 8px;
+	border: 1px solid #dbdbdb;
+	border-radius: 6px 6px 6px 6px;
+	margin-left: 23px;
+  }
+
+   .form-basic-new{
+	margin-left: -25px;
+	
+   }
+   
+   .form-row input[type=checkbox] {
+		margin-top: 5px;
+	}
+	
+	.form-log-in-with-ec .form-row>label span {
+		display: block;
+		text-align: left;
+		padding: 0 0 10px;
+	}
+	
+	.salir{
+	  margin-left: 230px;
+	  margin-top: -10px;
+	}
+}
+
+
+/* The form title */
+
+
+
+.form-basic-new {
+	width: 100%;
+	text-align: center;
+}
+
+.form-basic-new .mediawork {
+	color: #808B96;
+	font-family: calibri;
+	font-size: 17px;
+	text-align: center;
+}
+
+.form-basic-new .mediawork1 {
+	color:#424949;
+	font-family: calibri light;
+	font-size: 20px;
+	margin-top: -15px;
+	letter-spacing: -1px;
+	text-align: center;	
+}
+
+.estadcu {
+	margin-left: 82px
+}
+
+.send-email {
+	margin-left: 112px;
+}
+
+.confirmacion {
+	margin-left: 130px;
+}
+
+.modal-dialog {
+	visibility: visible;
+}
+
+
+/*	Making the form responsive. Remove this media query
+    if you don't need the form to work on mobile devices. */
+    
+   
+ 
+@media only screen and (max-width: 780px) {
+	.modal-dialog {
+		margin-left: -70px;
+		margin-top: 20px
+	}
+
+
+	.form-basic-new {
+		padding: 20px;
+		width: 45%;
+		visibility: visible;
+		max-height: 45px;
+	}
+	.form-basic-new .mediawork {
+		width: 100%;
+		margin: 25px auto;
+		text-align: center;
+		color: #808B96;
+		font-family: calibri;
+		font-size: 17px;
+		display: inline-block;
+	}
+	.form-basic-new .mediawork1 {
+		color: #424949;
+		font-family: calibri light;
+		font-size: 18px;
+		margin-top: -15px;
+		letter-spacing: -1px;
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+	.header-middle {
+		max-width: 780px;
+	}
+	.header-middle .cantainer {
+		margin-left: -205px
+	}
+	#cab {
+		margin-left: 250px;
+	}
+	#lef {
+		margin-left: -180px
+	}
+	.modal-dialog {
+		margin-left: -125px;
+		margin-top: 20px
+	}
+	.estadcu {
+		margin-left: 76px
+	}
+	.send-email {
+		margin-left: 102px;
+	}
+	.confirmacion {
+		margin-left: 120px;
+	}
+	
+	
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+	.form-basic .vamos {
+		margin-left: -510px;
+	}
+	.form-basic-new {
+		padding: 20px;
+		width: 29%;
+		visibility: visible;
+		max-height: 45px;
+	}
+	.form-basic-new .mediawork {
+		width: 100%;
+		margin: 25px auto;
+		text-align: center;
+		color: #808B96;
+		font-family: calibri;
+		font-size: 17px;
+		display: inline-block;
+	}
+	.form-basic-new .mediawork1 {
+		color: #424949;
+		font-family: calibri light;
+		font-size: 18px;
+		margin-top: -15px;
+		letter-spacing: -1px;
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+	.pieEC {
+		visibility: hidden;
+	}
+	.form-basic .form-row .divButton {
+		margin-left: -210px;
+	}
+	.header-middle {
+		max-width: 650px;
+	}
+	.header-middle .cantainer {
+		margin-left: -225px
+	}
+	.container {
+		max-width: 480px;
+	}
+	#cab {
+		margin-left: -30px;
+	}
+	#lef {
+		margin-left: -280px
+	}
+	.modal-sm {
+		width: 355px;
+		height: 330px;
+	}
+	.modal-dialog {
+		margin-left: -125px;
+		margin-top: 20px
+	}
+	.estadcu {
+		margin-left: 76px
+	}
+	.send-email {
+		margin-left: 102px;
+	}
+	.confirmacion {
+		margin-left: 120px;
+	}
+	
+	
+	
+}
