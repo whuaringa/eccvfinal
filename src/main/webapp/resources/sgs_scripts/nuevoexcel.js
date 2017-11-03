@@ -2,19 +2,26 @@ $(document).ready(function() {
 	$("#btnGuardarExcel").click();
 });
 
-$("#btnBorrar").on("click", function(){
+/*
+ $("#btnBorrar").on("click", function(){
+ $("#cboMes").multiselect("deselectAll", false);
+ $("#cboMes").multiselect("select", []);
+ });
+ */
+
+function LimpiaForm(){
 	$("#cboMes").multiselect("deselectAll", false);
 	$("#cboMes").multiselect("select", []);
-});
+}
 
 //$("#btnEnviodecorreo1").on("click", function(){
 function Enviodecorreo(){
 	console.log("ENTROOOO");
 	var cboAnio = $("#cboAnio").val();
 	var cboMes = $("#cboMes").val();
-	
+
 	$("#txtFechas").val(cboAnio + "," + cboMes);
-	
+
 	var codTrabajador = document.getElementById("txtCodTrabajador").value;
 	var dni = document.getElementById("txtDNI").value;
 	var periodo = document.getElementById("txtFechas").value;
@@ -22,39 +29,39 @@ function Enviodecorreo(){
 	console.log(dni);
 	console.log(periodo);
 	console.log(cboAnio + " "+ cboMes);
-	
+
 	if(codTrabajador != ""){
 		if(dni != ""){
 			if(cboAnio != "-1"){
 				if(cboMes != null){
-					$("#gridModalProducto").modal("show");		
+					$("#gridModalProducto").modal("show");
 				}else{
 					swal("Error" ,"Debe seleccionar meses a consultar","error");
-				}				
+				}
 			}else{
 				swal("Error" ,"Debe seleccionar a\u00F1o a consultar","error");
-			}		
+			}
 		}
 		else{
 			swal("Error" ,"Debe ingresar DNI","error");
-		}		
+		}
 	}
 	else{
 		swal("Error" ,"Debe ingresar c\u00F3digo de trabajador","error");
 	}
-	//$("#gridModalCorreoRec").modal("show");	
+	//$("#gridModalCorreoRec").modal("show");
 //});
 };
 
 //$("#btnGuardar").on("click", function(){
 function enviar(){
-	$("#gridModalProducto").modal("hide");		 	
+	$("#gridModalProducto").modal("hide");
 	//$("#gridModalCorreoRec").modal("show");
 	var cboAnio = $("#cboAnio").val();
 	var cboMes = $("#cboMes").val();
-	
+
 	$("#txtFechas").val(cboAnio + "," + cboMes);
-	
+
 	var codTrabajador = document.getElementById("txtCodTrabajador").value;
 	var dni = document.getElementById("txtDNI").value;
 	var periodo = document.getElementById("txtFechas").value;
@@ -79,62 +86,61 @@ function enviar(){
 				showConfirmButton : false
 			})
 		},
-		success : function(response){	
+		success : function(response){
 			swal.close();
-			$("#gridModalCorreoRec").modal("show");		
+			$("#gridModalCorreoRec").modal("show");
 		},
-		error : function(jqXHR, exception){	
+		error : function(jqXHR, exception){
 			swal.close();
 			var msg = '';
 			if (jqXHR.status == 400) {
-	            msg = 'Su correo no pudo ser enviado';
-	        } else if (jqXHR.status === 0) {
-	            msg = 'No conectado. Por favor verificar su red.';
-	        } else if (jqXHR.status == 404) {
-	            msg = 'Pagina requerida no encontrada. [404]';
-	        } else if (jqXHR.status == 500) {
-	            msg = 'Error del servidor interno [500].';
-	        } else if (exception === 'parsererror') {
-	            msg = 'Falló en parseo de JSON.';
-	        } else if (exception === 'timeout') {
-	            msg = 'Su consulta se encuentra fuera de tiempo.';
-	        } else if (exception === 'abort') {
-	            msg = 'Ajax request aborted.';
-	        }/* else {
-	            msg = 'Uncaught Error.\n' + jqXHR.responseText;
-	        }*/
+				msg = 'Su correo no pudo ser enviado';
+			} else if (jqXHR.status === 0) {
+				msg = 'No conectado. Por favor verificar su red.';
+			} else if (jqXHR.status == 404) {
+				msg = 'Pagina requerida no encontrada. [404]';
+			} else if (jqXHR.status == 500) {
+				msg = 'Error del servidor interno [500].';
+			} else if (exception === 'parsererror') {
+				msg = 'Falló en parseo de JSON.';
+			} else if (exception === 'timeout') {
+				msg = 'Su consulta se encuentra fuera de tiempo.';
+			} else if (exception === 'abort') {
+				msg = 'Ajax request aborted.';
+			}/* else {
+			 msg = 'Uncaught Error.\n' + jqXHR.responseText;
+			 }*/
 			document.getElementById("pmensaje").innerHTML = msg;
 			console.log(msg);
 			//alert(msg);
-			$("#gridModalCorreoNoRec").modal("show");		
+			$("#gridModalCorreoNoRec").modal("show");
 			//swal("Error",msg,"error");
-			
-	
-		/*error : function(response){
-			swal.close();
-			swal("Cancelado", response.ls_mensajeserver, "error");
-		*/}, 
+
+
+			/*error : function(response){
+			 swal.close();
+			 swal("Cancelado", response.ls_mensajeserver, "error");
+			 */},
 		complete: function(){
-			$('#listBodyMovimiento1').dataTable().fnClearTable();	
+			$('#listBodyMovimiento1').dataTable().fnClearTable();
 			$("#frmestadoCuenta")[0].reset();
 			$("#btnBorrar").click();
 			//$(".cbomes option").prop('selected', false).trigger('chosen:updated');
 			//$("#btnBorrar").click();
 		}
-
 	});
 //});
 }
 
 //$("#btnok").on("click", function(){
 function ok(){
-	$("#gridModalCorreoRec").modal("hide");		
+	$("#gridModalCorreoRec").modal("hide");
 //})
 }
 
 
 //$("#btnokno").on("click", function(){
 function okno(){
-	$("#gridModalCorreoNoRec").modal("hide");		
+	$("#gridModalCorreoNoRec").modal("hide");
 //})
 }
